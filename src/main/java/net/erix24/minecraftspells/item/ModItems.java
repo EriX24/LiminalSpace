@@ -1,6 +1,11 @@
 package net.erix24.minecraftspells.item;
 
 import net.erix24.minecraftspells.Spells;
+import net.erix24.minecraftspells.item.custom.BoostSpellItem;
+import net.erix24.minecraftspells.item.custom.ForceSpellItem;
+import net.erix24.minecraftspells.item.custom.SpellParchmentItem;
+import net.erix24.minecraftspells.item.unlimiteditems.UnlimitedBoostSpellItem;
+import net.erix24.minecraftspells.item.unlimiteditems.UnlimitedForceSpellItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +19,22 @@ public class ModItems {
 
     // Items
     public static final RegistryObject<Item> SPELL_PARCHMENT = ITEMS.register("spell_parchment",
-            () -> new Item(new Item.Properties()));
+            () -> new SpellParchmentItem(new Item.Properties()));
+    public static final RegistryObject<Item> KINETIC_PARCHMENT = ITEMS.register("kinetic_parchment",
+            () -> new SpellParchmentItem(new Item.Properties()));
+    public static final RegistryObject<Item> FLAME_PARCHMENT = ITEMS.register("flame_parchment",
+            () -> new SpellParchmentItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FORCE_SPELL_PARCHMENT = ITEMS.register("force_spell_parchment",
+            () -> new ForceSpellItem(new Item.Properties().stacksTo(1).durability(16)));
     public static final RegistryObject<Item> BOOST_SPELL_PARCHMENT = ITEMS.register("boost_spell_parchment",
-            () -> new Item(new Item.Properties()));
+            () -> new BoostSpellItem(new Item.Properties().stacksTo(1).durability(4)));
+
+    // Unlimited items
+    public static final RegistryObject<Item> UNLIMITED_BOOST_SPELL_PARCHMENT = ITEMS.register("boost_spell_unlimited",
+            () -> new UnlimitedBoostSpellItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> UNLIMITED_FORCE_SPELL_PARCHMENT = ITEMS.register("force_spell_unlimited",
+            () -> new UnlimitedForceSpellItem(new Item.Properties().stacksTo(1)));
 
     // Method to register the items
     public static void register(IEventBus eventBus) {

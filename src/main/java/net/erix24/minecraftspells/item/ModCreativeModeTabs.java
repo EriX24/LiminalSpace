@@ -4,7 +4,6 @@ import net.erix24.minecraftspells.Spells;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,7 +19,14 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.spell_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SPELL_PARCHMENT.get());
+                        output.accept(ModItems.KINETIC_PARCHMENT.get());
+                        output.accept(ModItems.FLAME_PARCHMENT.get());
+
+                        output.accept(ModItems.FORCE_SPELL_PARCHMENT.get());
                         output.accept(ModItems.BOOST_SPELL_PARCHMENT.get());
+
+                        output.accept(ModItems.UNLIMITED_FORCE_SPELL_PARCHMENT.get());
+                        output.accept(ModItems.UNLIMITED_BOOST_SPELL_PARCHMENT.get());
                     })
                     .build());
 

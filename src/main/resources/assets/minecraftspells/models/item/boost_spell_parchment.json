@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraftspells:item/boost_spell_parchment"
+  }
+}
