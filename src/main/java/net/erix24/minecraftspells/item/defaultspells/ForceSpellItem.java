@@ -24,6 +24,11 @@ public class ForceSpellItem extends Item {
     }
 
     @Override
+    public float getDestroySpeed(ItemStack pStack, BlockState pState) {
+        return 0F;
+    }
+
+    @Override
     public boolean mineBlock(ItemStack pStack, Level pLevel, BlockState pState, BlockPos pPos, LivingEntity pMiningEntity) {
         return false;
     }

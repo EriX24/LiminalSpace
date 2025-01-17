@@ -17,11 +17,6 @@ public class UnlimitedBoostSpellItem extends Item {
     }
 
     @Override
-    public boolean canAttackBlock(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer) {
-        return false;
-    }
-
-    @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         Vec3 newVelocity = new Vec3(0, 5, 0);
 
