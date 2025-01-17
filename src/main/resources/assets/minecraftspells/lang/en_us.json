@@ -1,8 +1,12 @@
 {
   "item.minecraftspells.spell_parchment": "Spell Parchment",
   "item.minecraftspells.kinetic_parchment": "Kinetic Parchment",
+  "item.minecraftspells.flame_parchment": "Flame Parchment",
+
   "item.minecraftspells.force_spell_parchment": "Force Spell",
   "item.minecraftspells.boost_spell_parchment": "Boost Spell",
+
+  "item.minecraftspells.ignite_spell_parchment": "Ignite Spell",
 
   "item.minecraftspells.force_spell_unlimited": "Force Spell",
   "item.minecraftspells.boost_spell_unlimited": "Boost Spell",

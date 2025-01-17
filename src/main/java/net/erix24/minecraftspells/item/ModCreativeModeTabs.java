@@ -25,8 +25,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FORCE_SPELL_PARCHMENT.get());
                         output.accept(ModItems.BOOST_SPELL_PARCHMENT.get());
 
-                        output.accept(ModItems.UNLIMITED_FORCE_SPELL_PARCHMENT.get());
-                        output.accept(ModItems.UNLIMITED_BOOST_SPELL_PARCHMENT.get());
+                        output.accept(ModItems.IGNITE_SPELL_PARCHMENT.get());
+
+                        // output.accept(ModItems.UNLIMITED_FORCE_SPELL_PARCHMENT.get());
+                        // output.accept(ModItems.UNLIMITED_BOOST_SPELL_PARCHMENT.get());
                     })
                     .build());
 

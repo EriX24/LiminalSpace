@@ -1,9 +1,10 @@
 package net.erix24.minecraftspells.item;
 
 import net.erix24.minecraftspells.Spells;
-import net.erix24.minecraftspells.item.custom.BoostSpellItem;
-import net.erix24.minecraftspells.item.custom.ForceSpellItem;
-import net.erix24.minecraftspells.item.custom.SpellParchmentItem;
+import net.erix24.minecraftspells.item.defaultspells.BoostSpellItem;
+import net.erix24.minecraftspells.item.defaultspells.ForceSpellItem;
+import net.erix24.minecraftspells.item.defaultspells.IgniteSpellItem;
+import net.erix24.minecraftspells.item.defaultspells.SpellParchmentItem;
 import net.erix24.minecraftspells.item.unlimiteditems.UnlimitedBoostSpellItem;
 import net.erix24.minecraftspells.item.unlimiteditems.UnlimitedForceSpellItem;
 import net.minecraft.world.item.Item;
@@ -26,9 +27,12 @@ public class ModItems {
             () -> new SpellParchmentItem(new Item.Properties()));
 
     public static final RegistryObject<Item> FORCE_SPELL_PARCHMENT = ITEMS.register("force_spell_parchment",
-            () -> new ForceSpellItem(new Item.Properties().stacksTo(1).durability(16)));
+            () -> new ForceSpellItem(new Item.Properties().stacksTo(1).durability(8)));
     public static final RegistryObject<Item> BOOST_SPELL_PARCHMENT = ITEMS.register("boost_spell_parchment",
-            () -> new BoostSpellItem(new Item.Properties().stacksTo(1).durability(4)));
+            () -> new BoostSpellItem(new Item.Properties().stacksTo(1).durability(8)));
+
+    public static final RegistryObject<Item> IGNITE_SPELL_PARCHMENT = ITEMS.register("ignite_spell_parchment",
+            () -> new IgniteSpellItem(new Item.Properties().stacksTo(1).durability(4)));
 
     // Unlimited items
     public static final RegistryObject<Item> UNLIMITED_BOOST_SPELL_PARCHMENT = ITEMS.register("boost_spell_unlimited",

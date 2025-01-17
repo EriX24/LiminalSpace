@@ -1,4 +1,4 @@
-package net.erix24.minecraftspells.item.custom;
+package net.erix24.minecraftspells.item.defaultspells;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -25,11 +25,6 @@ public class ForceSpellItem extends Item {
 
     @Override
     public boolean mineBlock(ItemStack pStack, Level pLevel, BlockState pState, BlockPos pPos, LivingEntity pMiningEntity) {
-        return false;
-    }
-
-    @Override
-    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
         return false;
     }
 
